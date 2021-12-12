@@ -1,0 +1,20 @@
+#TYPE-SYSTEM
+
+type Query{
+    pizzas(name:String):[pizza]
+}
+
+type pizza{
+    piz_id: Int!,
+    piz_name: String,
+    piz_origin: String,
+    piz_state: Boolean,
+    ingredients:[ingredient]
+}
+
+type ingredient{
+    ing_id: Int!,
+    ing_name: String,
+    ing_calories: String,
+    ing_state: Boolean
+}
